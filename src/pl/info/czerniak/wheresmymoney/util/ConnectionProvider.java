@@ -16,8 +16,7 @@ public class ConnectionProvider {
             try {
                 Context initialContext = new InitialContext();
                 Context envContext = (Context) initialContext.lookup("java:comp/env");
-                DataSource ds = (DataSource) envContext.lookup("jdbc/wheresmymoney");
-                dataSource = ds;
+                dataSource = (DataSource) envContext.lookup("jdbc/wheresmymoney");
             } catch (NamingException e) {
                 e.printStackTrace();
             }
