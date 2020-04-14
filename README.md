@@ -1,6 +1,6 @@
 # Wheres my money?
 
-A simple application that helps you manage your expensis on a common trip.
+A simple application that helps you manage your expensis on a common trip with your friends or family.
 
 
 ## Table of Contents
