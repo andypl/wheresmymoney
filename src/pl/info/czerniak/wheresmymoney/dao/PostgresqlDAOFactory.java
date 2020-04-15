@@ -4,31 +4,31 @@ public class PostgresqlDAOFactory extends DAOFactory{
 
     @Override
     public ProjectDAO getProjectDAO() {
-        return ProjectDAOImpl();
+        return new ProjectDAOImpl();
     }
 
     @Override
     public UserDAO getUserDAO() {
-        return UserDAOImpl();
+        return new UserDAOImpl();
     }
 
     @Override
     public PersonDAO getPersonDAO() {
-        return PersonDAOImpl();
+        return new PersonDAOImpl();
     }
 
     @Override
     public LoanDAO getLoanDAO() {
-        return LoanDAOImpl();
+        return new LoanDAOImpl();
     }
 
     @Override
     public BillDAO getBillDAO() {
-        return BillDAOImpl();
+        return new BillDAOImpl();
     }
 
     @Override
     public BillItemDAO getBillItemDAO() {
-        return BillItemDAOImpl();
+        return new BillItemDAOImpl();
     }
 }
