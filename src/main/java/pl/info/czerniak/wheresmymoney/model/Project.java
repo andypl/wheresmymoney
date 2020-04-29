@@ -9,9 +9,9 @@ public class Project {
     private String description;
     private Timestamp createdOn;
     private User createdByUser;
-    private LinkedList<Person> personsList;
-    private LinkedList<Bill> billList;
-    private LinkedList<Loan> loanList;
+    private List<Person> personsList;
+    private List<Bill> billList;
+    private List<Loan> loanList;
 
     public Project() { }
     public Project(Project project){
@@ -57,20 +57,20 @@ public class Project {
         return createdByUser;
     }
 
-    public LinkedList<Person> getPersonsList() {
+    public List<Person> getPersonsList() {
         return personsList;
     }
 
-    public LinkedList<Bill> getBillList() {
+    public List<Bill> getBillList() {
         return billList;
     }
 
-    public LinkedList<Loan> getLoanList() {
+    public List<Loan> getLoanList() {
         return loanList;
     }
 
-    public void removeBillFromList(HashMap<Long, Bill> bill){
-        this.billList.remove(bill);
+    public void removeBillFromList(long billId){
+        this.billList.remove(billId);
     }
     public void addBillToList(Bill bill){
         this.billList.add(bill);

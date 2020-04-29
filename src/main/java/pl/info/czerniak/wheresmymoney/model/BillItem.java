@@ -1,5 +1,6 @@
 package pl.info.czerniak.wheresmymoney.model;
 
+
 import java.util.Objects;
 
 public class BillItem {

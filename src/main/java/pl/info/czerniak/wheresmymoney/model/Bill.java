@@ -63,12 +63,13 @@ public class Bill {
                 Float.compare(bill.totalAmount, totalAmount) == 0 &&
                 name.equals(bill.name) &&
                 description.equals(bill.description) &&
+                billItemList.equals(bill.billItemList) &&
                 createdOn.equals(bill.createdOn);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, description, totalAmount, createdOn);
+        return Objects.hash(id, name, description, billItemList, totalAmount, createdOn);
     }
 
     @Override
