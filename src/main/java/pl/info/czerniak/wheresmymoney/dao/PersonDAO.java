@@ -8,5 +8,5 @@ public interface PersonDAO extends GenericDAO<Person, Long>{
 
     @Override
     List<Person> getAll();
-    public List<Person> getPersonByProjectId(long projectId);
+    List<Person> getPersonByProjectId(long projectId);
 }

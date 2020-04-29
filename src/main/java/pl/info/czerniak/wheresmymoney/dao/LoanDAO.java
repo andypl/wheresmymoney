@@ -8,5 +8,5 @@ public interface LoanDAO extends GenericDAO<Loan, Long>{
 
     @Override
     List<Loan> getAll();
-    public List<Loan> getLoanByProjectId(long projectId);
+    List<Loan> getLoanByProjectId(long projectId);
 }

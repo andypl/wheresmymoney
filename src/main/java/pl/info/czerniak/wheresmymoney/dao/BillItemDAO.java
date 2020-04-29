@@ -8,5 +8,5 @@ public interface BillItemDAO extends GenericDAO<BillItem, Long> {
 
     @Override
     List<BillItem> getAll();
-    public List<BillItem> getBillItemByBillId(long billId);
+    List<BillItem> getBillItemByBillId(long billId);
 }
